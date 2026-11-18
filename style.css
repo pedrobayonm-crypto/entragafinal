@@ -292,3 +292,94 @@ footer {
         font-size: 30px;
     }
 }
+
+/* RECOMENDACIONES */
+
+.titulo-recomendaciones {
+    text-align: center;
+    padding: 65px 20px 45px;
+}
+
+.titulo-recomendaciones h1 {
+    color: #e87524;
+    font-size: 38px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.titulo-recomendaciones p {
+    color: #cccccc;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.categoria {
+    margin: 35px 0 55px;
+    overflow: hidden;
+}
+
+.categoria h2 {
+    color: #e87524;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 0 40px 20px;
+}
+
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrusel-contenido {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: girarPeliculas 35s linear infinite;
+}
+
+.carrusel-contenido a {
+    display: block;
+    width: 190px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.carrusel-contenido img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.carrusel-contenido a:hover img {
+    transform: scale(1.08);
+}
+
+.carrusel:hover .carrusel-contenido {
+    animation-play-state: paused;
+}
+
+@keyframes girarPeliculas {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 700px) {
+    .titulo-recomendaciones h1 {
+        font-size: 28px;
+    }
+
+    .categoria h2 {
+        margin-left: 20px;
+    }
+
+    .carrusel-contenido a {
+        width: 145px;
+    }
+}
