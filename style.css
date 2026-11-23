@@ -379,6 +379,109 @@ footer {
         margin-left: 20px;
     }
 
+    
+/* FRASE DE NOLAN */
+
+.frase-nolan {
+    margin: 70px auto;
+    padding: 40px 25px;
+    max-width: 850px;
+    border-top: 1px solid #e87524;
+    border-bottom: 1px solid #e87524;
+    text-align: center;
+}
+
+.etiqueta-frase {
+    color: #e87524;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.frase-nolan h2 {
+    font-size: 27px;
+    line-height: 1.6;
+    font-weight: normal;
+    color: white;
+}
+
+.traduccion-frase {
+    color: #aaaaaa;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+.autor-frase {
+    color: #e87524;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.audio-nolan {
+    margin-top: 35px;
+}
+
+.audio-nolan p {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.audio-nolan audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* GIF DE NOLAN */
+
+.gif-nolan {
+    margin: 60px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.gif-nolan h2 {
+    color: #e87524;
+    letter-spacing: 3px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.gif-nolan img {
+    width: 100%;
+    max-width: 750px;
+    border: 1px solid #e87524;
+    display: block;
+    margin: auto;
+}
+
+.gif-nolan p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+
+    .frase-nolan {
+        padding: 30px 18px;
+    }
+
+    .frase-nolan h2 {
+        font-size: 21px;
+    }
+
+    .gif-nolan {
+        margin: 40px 20px;
+    }
+
+}
+
+
     .carrusel-contenido a {
         width: 145px;
     }
