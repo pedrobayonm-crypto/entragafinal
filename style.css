@@ -493,5 +493,18 @@ footer {
     display: block;
     margin: auto;
 }
+.nolan-volver {
+    text-align: center;
+    padding: 30px 20px 60px;
+}
 
+.nolan-volver a {
+    display: inline-block;
+    color: #e87524;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #e87524;
+    padding-bottom: 8px;
+}
 
