@@ -198,176 +198,6 @@ footer {
     transform: scale(1.08);
 }
 
-@media (max-width: 700px) {
-    .catalogo {
-        padding: 35px 20px;
-    }
-
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-}
-
-
-.detalle-pelicula {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-.imagen-pelicula {
-    width: 350px;
-    flex-shrink: 0;
-}
-
-.imagen-pelicula img {
-    width: 100%;
-    display: block;
-    border: 2px solid #e87524;
-}
-
-.informacion-pelicula {
-    flex: 1;
-}
-
-.informacion-pelicula h1 {
-    color: #e87524;
-    font-size: 40px;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-}
-
-.informacion-pelicula h2 {
-    color: #e87524;
-    font-size: 19px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.informacion-pelicula p {
-    color: #cccccc;
-    font-size: 15px;
-    line-height: 1.8;
-}
-
-.subtitulo-pelicula {
-    letter-spacing: 2px;
-    font-size: 12px !important;
-}
-
-.boton-musica,
-.boton-volver {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 13px 20px;
-    border: 1px solid #e87524;
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-
-.boton-musica:hover,
-.boton-volver:hover {
-    background-color: #e87524;
-}
-
-@media (max-width: 700px) {
-    .detalle-pelicula {
-        flex-direction: column;
-        gap: 30px;
-        padding: 25px;
-    }
-
-    .imagen-pelicula {
-        width: 75%;
-    }
-
-    .informacion-pelicula h1 {
-        font-size: 30px;
-    }
-}
-
-/* RECOMENDACIONES */
-
-.titulo-recomendaciones {
-    text-align: center;
-    padding: 65px 20px 45px;
-}
-
-.titulo-recomendaciones h1 {
-    color: #e87524;
-    font-size: 38px;
-    letter-spacing: 5px;
-    margin-bottom: 15px;
-}
-
-.titulo-recomendaciones p {
-    color: #cccccc;
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
-.categoria {
-    margin: 35px 0 55px;
-    overflow: hidden;
-}
-
-.categoria h2 {
-    color: #e87524;
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin: 0 40px 20px;
-}
-
-.carrusel {
-    width: 100%;
-    overflow: hidden;
-}
-
-.carrusel-contenido {
-    display: flex;
-    width: max-content;
-    gap: 20px;
-    animation: girarPeliculas 35s linear infinite;
-}
-
-.carrusel-contenido a {
-    display: block;
-    width: 190px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.carrusel-contenido img {
-    width: 100%;
-    aspect-ratio: 2 / 3;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.carrusel-contenido a:hover img {
-    transform: scale(1.08);
-}
-
-.carrusel:hover .carrusel-contenido {
-    animation-play-state: paused;
-}
-
-@keyframes girarPeliculas {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-}
 
 @media (max-width: 700px) {
     .titulo-recomendaciones h1 {
@@ -378,7 +208,11 @@ footer {
         margin-left: 20px;
     }
 
-    
+    .carrusel-contenido a {
+        width: 145px;
+    }
+}
+
 /* FRASE DE NOLAN */
 
 .frase-nolan {
@@ -464,28 +298,6 @@ footer {
     margin-top: 20px;
 }
 
-@media (max-width: 700px) {
-
-    .frase-nolan {
-        padding: 30px 18px;
-    }
-
-    .frase-nolan h2 {
-        font-size: 21px;
-    }
-
-    .gif-nolan {
-        margin: 40px 20px;
-    }
-
-}
-
-
-    .carrusel-contenido a {
-        width: 145px;
-    }
-}
-
 .gif-nolan video {
     width: 100%;
     max-width: 750px;
@@ -493,6 +305,9 @@ footer {
     display: block;
     margin: auto;
 }
+
+/* VOLVER AL INICIO */
+
 .nolan-volver {
     text-align: center;
     padding: 30px 20px 60px;
@@ -508,3 +323,18 @@ footer {
     padding-bottom: 8px;
 }
 
+/* AJUSTES PARA CELULARES */
+
+@media (max-width: 700px) {
+    .frase-nolan {
+        padding: 30px 18px;
+    }
+
+    .frase-nolan h2 {
+        font-size: 21px;
+    }
+
+    .gif-nolan {
+        margin: 40px 20px;
+    }
+}
