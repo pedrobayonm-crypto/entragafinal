@@ -1,520 +1,25 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    background-color: #111111;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    padding: 25px 60px;
-    border-bottom: 1px solid #333333;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav h2 {
-    color: #e87524;
-    font-size: 22px;
-    letter-spacing: 2px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-nav a:hover {
-    color: #e87524;
-}
-
-.portada {
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.portada h1 {
-    font-size: 65px;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
-}
-
-.portada h3 {
-    color: #e87524;
-    font-size: 15px;
-    letter-spacing: 3px;
-    margin-bottom: 35px;
-}
-
-.boton {
-    padding: 13px 30px;
-    border: 1px solid #e87524;
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-
-.boton:hover {
-    background-color: #e87524;
-}
-
-.seccion {
-    min-height: 300px;
-    padding: 70px 60px;
-    border-top: 1px solid #333333;
-    text-align: center;
-}
-
-.seccion h2 {
-    color: #e87524;
-    font-size: 28px;
-    letter-spacing: 3px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #777777;
-    font-size: 12px;
-    border-top: 1px solid #333333;
-}
-
-.director {
-    max-width: 900px;
-    margin: auto;
-    padding: 80px 40px;
-    text-align: center;
-}
-
-.director h1 {
-    color: #e87524;
-    font-size: 16px;
-    letter-spacing: 4px;
-    margin-bottom: 25px;
-}
-
-.director h2 {
-    font-size: 40px;
-    letter-spacing: 3px;
-    margin-bottom: 30px;
-}
-
-.director p {
-    color: #cccccc;
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.datos {
-    margin-top: 60px;
-    margin-bottom: 50px;
-    padding: 30px;
-    border-top: 1px solid #444444;
-}
-
-.datos h2 {
-    color: #e87524;
-    font-size: 22px;
-    margin-bottom: 30px;
-}
-
-.datos p {
-    text-align: left;
-}
-
-.foto-director {
-    margin: 30px auto 40px;
-    width: 300px;
-    height: 350px;
-    overflow: hidden;
-    border: 2px solid #e87524;
-}
-
-.foto-director img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.foto-director:hover img {
-    transform: scale(1.08) translateY(-5px);
-}
-
-.catalogo {
-    padding: 50px 60px;
-}
-
-.catalogo h1 {
-    color: #e87524;
-    font-size: 28px;
-    letter-spacing: 4px;
-    margin-bottom: 35px;
-}
-
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.galeria a {
-    display: block;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.galeria img {
-    width: 100%;
-    aspect-ratio: 2 / 3;
-    object-fit: contain;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.galeria a:hover img {
-    transform: scale(1.08);
-}
-
-@media (max-width: 700px) {
-    .catalogo {
-        padding: 35px 20px;
-    }
-
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-}
-
-
-.detalle-pelicula {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-.imagen-pelicula {
-    width: 350px;
-    flex-shrink: 0;
-}
-
-.imagen-pelicula img {
-    width: 100%;
-    display: block;
-    border: 2px solid #e87524;
-}
-
-.informacion-pelicula {
-    flex: 1;
-}
-
-.informacion-pelicula h1 {
-    color: #e87524;
-    font-size: 40px;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
-}
-
-.informacion-pelicula h2 {
-    color: #e87524;
-    font-size: 19px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.informacion-pelicula p {
-    color: #cccccc;
-    font-size: 15px;
-    line-height: 1.8;
-}
-
-.subtitulo-pelicula {
-    letter-spacing: 2px;
-    font-size: 12px !important;
-}
-
-.boton-musica,
-.boton-volver {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 13px 20px;
-    border: 1px solid #e87524;
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-
-.boton-musica:hover,
-.boton-volver:hover {
-    background-color: #e87524;
-}
-
-@media (max-width: 700px) {
-    .detalle-pelicula {
-        flex-direction: column;
-        gap: 30px;
-        padding: 25px;
-    }
-
-    .imagen-pelicula {
-        width: 75%;
-    }
-
-    .informacion-pelicula h1 {
-        font-size: 30px;
-    }
-}
-
-/* RECOMENDACIONES */
-
-.titulo-recomendaciones {
-    text-align: center;
-    padding: 65px 20px 45px;
-}
-
-.titulo-recomendaciones h1 {
-    color: #e87524;
-    font-size: 38px;
-    letter-spacing: 5px;
-    margin-bottom: 15px;
-}
-
-.titulo-recomendaciones p {
-    color: #cccccc;
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
-.categoria {
-    margin: 35px 0 55px;
-    overflow: hidden;
-}
-
-.categoria h2 {
-    color: #e87524;
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin: 0 40px 20px;
-}
-
-.carrusel {
-    width: 100%;
-    overflow: hidden;
-}
-
-.carrusel-contenido {
-    display: flex;
-    width: max-content;
-    gap: 20px;
-    animation: girarPeliculas 35s linear infinite;
-}
-
-.carrusel-contenido a {
-    display: block;
-    width: 190px;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.carrusel-contenido img {
-    width: 100%;
-    aspect-ratio: 2 / 3;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.carrusel-contenido a:hover img {
-    transform: scale(1.08);
-}
-
-.carrusel:hover .carrusel-contenido {
-    animation-play-state: paused;
-}
-
-@keyframes girarPeliculas {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 700px) {
-    .titulo-recomendaciones h1 {
-        font-size: 28px;
-    }
-
-    .categoria h2 {
-        margin-left: 20px;
-    }
-
-    
-/* FRASE DE NOLAN */
-
-.frase-nolan {
-    margin: 70px auto;
-    padding: 40px 25px;
-    max-width: 850px;
-    border-top: 1px solid #e87524;
-    border-bottom: 1px solid #e87524;
-    text-align: center;
-}
-
-.etiqueta-frase {
-    color: #e87524;
-    font-size: 12px;
-    letter-spacing: 4px;
-    margin-bottom: 30px;
-}
-
-.frase-nolan h2 {
-    font-size: 27px;
-    line-height: 1.6;
-    font-weight: normal;
-    color: white;
-}
-
-.traduccion-frase {
-    color: #aaaaaa;
-    font-size: 15px;
-    line-height: 1.8;
-    margin-top: 25px;
-}
-
-.autor-frase {
-    color: #e87524;
-    letter-spacing: 3px;
-    font-size: 12px;
-    margin-top: 25px;
-}
-
-.audio-nolan {
-    margin-top: 35px;
-}
-
-.audio-nolan p {
-    color: white;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.audio-nolan audio {
-    width: 100%;
-    max-width: 400px;
-}
-
-/* GIF DE NOLAN */
-
-.gif-nolan {
-    margin: 60px auto;
-    max-width: 800px;
-    text-align: center;
-}
-
-.gif-nolan h2 {
-    color: #e87524;
-    letter-spacing: 3px;
-    font-size: 22px;
-    margin-bottom: 25px;
-}
-
-.gif-nolan img {
-    width: 100%;
-    max-width: 750px;
-    border: 1px solid #e87524;
-    display: block;
-    margin: auto;
-}
-
-.gif-nolan p {
-    color: #aaaaaa;
-    font-size: 14px;
-    line-height: 1.8;
-    margin-top: 20px;
-}
-
-@media (max-width: 700px) {
-
-    .frase-nolan {
-        padding: 30px 18px;
-    }
-
-    .frase-nolan h2 {
-        font-size: 21px;
-    }
-
-    .gif-nolan {
-        margin: 40px 20px;
-    }
-
-}
-
-
-    .carrusel-contenido a {
-        width: 145px;
-    }
-}
-
-.gif-nolan video {
-    width: 100%;
-    max-width: 750px;
-    border: 1px solid #e87524;
-    display: block;
-    margin: auto;
-}
-
-
-/* =================================
+/* ==========================================
    PAGINA ESPECIAL: CHRISTOPHER NOLAN
-================================= */
+========================================== */
 
 .nolan-page {
-    background: #111111;
-    color: #eeeeee;
+    background-color: #111111;
+    color: white;
+    overflow: hidden;
 }
 
 /* PORTADA */
 
 .nolan-portada {
-    min-height: 490px;
-    padding: 110px 30px 90px;
-    text-align: center;
+    min-height: 520px;
+    padding: 100px 25px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     border-bottom: 1px solid #333333;
 }
 
@@ -526,47 +31,49 @@ footer {
 }
 
 .nolan-portada h1 {
+    color: white;
     font-size: clamp(55px, 10vw, 115px);
     line-height: 0.95;
     letter-spacing: 5px;
     margin: 35px 0;
-    color: white;
 }
 
 .nolan-subtitulo {
-    font-size: 12px;
-    letter-spacing: 5px;
     color: #bbbbbb;
+    font-size: 12px;
+    letter-spacing: 4px;
 }
 
 .nolan-linea {
-    width: 65px;
+    width: 60px;
     height: 2px;
     background: #e87524;
     margin: 30px 0;
 }
 
 .nolan-intro {
-    color: #999999;
-    letter-spacing: 3px;
+    color: #888888;
     font-size: 12px;
+    letter-spacing: 3px;
 }
 
 
 /* BIOGRAFIA */
 
 .nolan-biografia {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: auto;
-    padding: 110px 35px;
+    padding: 110px 40px;
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
-    gap: 85px;
+    gap: 80px;
     align-items: center;
 }
 
 .nolan-foto img {
     width: 100%;
+    max-height: 530px;
+    object-fit: cover;
     display: block;
     filter: grayscale(100%);
     transition: filter 0.5s ease;
@@ -577,19 +84,17 @@ footer {
 }
 
 .nolan-foto p {
-    color: #888888;
+    color: #777777;
     font-size: 10px;
     letter-spacing: 3px;
     margin-top: 15px;
 }
 
-.nolan-texto h2,
-.nolan-ficha-titulo h2,
-.nolan-video-titulo h2 {
-    font-size: 36px;
+.nolan-texto h2 {
+    color: white;
+    font-size: 38px;
     line-height: 1.2;
     margin: 25px 0;
-    color: white;
 }
 
 .nolan-texto > p:not(.nolan-numero) {
@@ -600,14 +105,21 @@ footer {
 }
 
 
-/* FICHA */
+/* FICHA DEL DIRECTOR */
 
 .nolan-ficha {
     background: #191919;
-    padding: 85px max(35px, calc((100% - 1030px) / 2));
+    padding: 85px  max(35px, calc((100% - 1050px) / 2));
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     gap: 70px;
+}
+
+.nolan-ficha-titulo h2 {
+    color: white;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-top: 25px;
 }
 
 .nolan-dato {
@@ -638,19 +150,19 @@ footer {
 }
 
 .nolan-comillas {
+    color: #e87524;
     font-family: Georgia, serif;
     font-size: 100px;
     line-height: 1;
-    color: #e87524;
     margin-top: 35px;
 }
 
 .nolan-frase h2 {
+    color: white;
     font-family: Georgia, serif;
-    font-weight: normal;
     font-size: 27px;
     line-height: 1.6;
-    color: white;
+    font-weight: normal;
 }
 
 .nolan-traduccion {
@@ -696,9 +208,16 @@ footer {
     margin-bottom: 35px;
 }
 
+.nolan-video-titulo h2 {
+    color: white;
+    font-size: 38px;
+    margin: 25px 0;
+}
+
 .nolan-video-titulo > p:last-child {
     color: #999999;
     font-size: 14px;
+    line-height: 1.8;
 }
 
 .nolan-video video {
@@ -723,7 +242,7 @@ footer {
 
 .nolan-cierre {
     text-align: center;
-    padding: 100px 25px;
+    padding: 110px 25px;
 }
 
 .nolan-cierre > p {
@@ -738,11 +257,12 @@ footer {
     font-size: 30px;
     line-height: 1.5;
     font-weight: normal;
-    margin: 25px 0 35px;
+    margin: 25px 0 40px;
 }
 
 .nolan-cierre a,
 .nolan-volver a {
+    display: inline-block;
     color: #e87524;
     text-decoration: none;
     font-size: 11px;
@@ -768,8 +288,8 @@ footer {
 @media (max-width: 750px) {
 
     .nolan-portada {
-        min-height: 380px;
-        padding: 80px 20px;
+        min-height: 390px;
+        padding: 75px 20px;
     }
 
     .nolan-portada h1 {
@@ -778,7 +298,7 @@ footer {
 
     .nolan-subtitulo {
         font-size: 10px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
     .nolan-biografia {
@@ -820,4 +340,3 @@ footer {
         font-size: 24px;
     }
 }
-
