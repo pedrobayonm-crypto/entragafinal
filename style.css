@@ -494,3 +494,330 @@ footer {
     display: block;
     margin: auto;
 }
+
+
+/* =================================
+   PAGINA ESPECIAL: CHRISTOPHER NOLAN
+================================= */
+
+.nolan-page {
+    background: #111111;
+    color: #eeeeee;
+}
+
+/* PORTADA */
+
+.nolan-portada {
+    min-height: 490px;
+    padding: 110px 30px 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333333;
+}
+
+.nolan-etiqueta,
+.nolan-numero {
+    color: #e87524;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.nolan-portada h1 {
+    font-size: clamp(55px, 10vw, 115px);
+    line-height: 0.95;
+    letter-spacing: 5px;
+    margin: 35px 0;
+    color: white;
+}
+
+.nolan-subtitulo {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #bbbbbb;
+}
+
+.nolan-linea {
+    width: 65px;
+    height: 2px;
+    background: #e87524;
+    margin: 30px 0;
+}
+
+.nolan-intro {
+    color: #999999;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+
+/* BIOGRAFIA */
+
+.nolan-biografia {
+    max-width: 1100px;
+    margin: auto;
+    padding: 110px 35px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 85px;
+    align-items: center;
+}
+
+.nolan-foto img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.nolan-foto img:hover {
+    filter: grayscale(0%);
+}
+
+.nolan-foto p {
+    color: #888888;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.nolan-texto h2,
+.nolan-ficha-titulo h2,
+.nolan-video-titulo h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 25px 0;
+    color: white;
+}
+
+.nolan-texto > p:not(.nolan-numero) {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+
+/* FICHA */
+
+.nolan-ficha {
+    background: #191919;
+    padding: 85px max(35px, calc((100% - 1030px) / 2));
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+}
+
+.nolan-dato {
+    padding: 18px 0;
+    border-bottom: 1px solid #383838;
+}
+
+.nolan-dato span {
+    color: #e87524;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.nolan-dato p {
+    color: #eeeeee;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+
+/* FRASE */
+
+.nolan-frase {
+    max-width: 850px;
+    margin: 110px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.nolan-comillas {
+    font-family: Georgia, serif;
+    font-size: 100px;
+    line-height: 1;
+    color: #e87524;
+    margin-top: 35px;
+}
+
+.nolan-frase h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 1.6;
+    color: white;
+}
+
+.nolan-traduccion {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+.nolan-autor {
+    color: #e87524;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-top: 25px;
+}
+
+.nolan-audio {
+    margin-top: 45px;
+}
+
+.nolan-audio p {
+    color: #aaaaaa;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.nolan-audio audio {
+    width: 100%;
+    max-width: 380px;
+}
+
+
+/* VIDEO */
+
+.nolan-video {
+    background: #191919;
+    padding: 90px 30px;
+    text-align: center;
+}
+
+.nolan-video-titulo {
+    margin-bottom: 35px;
+}
+
+.nolan-video-titulo > p:last-child {
+    color: #999999;
+    font-size: 14px;
+}
+
+.nolan-video video {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    max-height: 550px;
+    object-fit: contain;
+    margin: auto;
+    background: #000000;
+}
+
+.nolan-video-pie {
+    color: #777777;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 18px;
+}
+
+
+/* CIERRE */
+
+.nolan-cierre {
+    text-align: center;
+    padding: 100px 25px;
+}
+
+.nolan-cierre > p {
+    color: #e87524;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.nolan-cierre h2 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 25px 0 35px;
+}
+
+.nolan-cierre a,
+.nolan-volver a {
+    color: #e87524;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #e87524;
+    padding-bottom: 8px;
+}
+
+.nolan-cierre a:hover,
+.nolan-volver a:hover {
+    color: white;
+    border-color: white;
+}
+
+.nolan-volver {
+    text-align: center;
+    padding: 0 20px 75px;
+}
+
+
+/* ADAPTACION A CELULARES */
+
+@media (max-width: 750px) {
+
+    .nolan-portada {
+        min-height: 380px;
+        padding: 80px 20px;
+    }
+
+    .nolan-portada h1 {
+        font-size: 58px;
+    }
+
+    .nolan-subtitulo {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .nolan-biografia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 70px 25px;
+    }
+
+    .nolan-foto {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .nolan-texto h2,
+    .nolan-ficha-titulo h2,
+    .nolan-video-titulo h2 {
+        font-size: 29px;
+    }
+
+    .nolan-ficha {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 65px 25px;
+    }
+
+    .nolan-frase {
+        margin: 75px auto;
+    }
+
+    .nolan-frase h2 {
+        font-size: 21px;
+    }
+
+    .nolan-video {
+        padding: 65px 18px;
+    }
+
+    .nolan-cierre h2 {
+        font-size: 24px;
+    }
+}
+
