@@ -1,3 +1,6 @@
+
+/* CONFIGURACION GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +12,8 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
+
+/* MENU */
 
 header {
     padding: 25px 60px;
@@ -42,6 +47,8 @@ nav a {
 nav a:hover {
     color: #e87524;
 }
+
+/* PORTADA PRINCIPAL */
 
 .portada {
     height: 75vh;
@@ -78,6 +85,8 @@ nav a:hover {
     background-color: #e87524;
 }
 
+/* SECCIONES */
+
 .seccion {
     min-height: 300px;
     padding: 70px 60px;
@@ -91,6 +100,8 @@ nav a:hover {
     letter-spacing: 3px;
 }
 
+/* PIE DE PAGINA */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -98,6 +109,8 @@ footer {
     font-size: 12px;
     border-top: 1px solid #333333;
 }
+
+/* PAGINA DEL DIRECTOR (ESTILO ANTERIOR) */
 
 .director {
     max-width: 900px;
@@ -163,6 +176,8 @@ footer {
     transform: scale(1.08) translateY(-5px);
 }
 
+/* CATALOGO DE PELICULAS */
+
 .catalogo {
     padding: 50px 60px;
 }
@@ -198,17 +213,7 @@ footer {
     transform: scale(1.08);
 }
 
-@media (max-width: 700px) {
-    .catalogo {
-        padding: 35px 20px;
-    }
-
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-}
-
+/* PAGINAS INDIVIDUALES DE PELICULAS */
 
 .detalle-pelicula {
     display: flex;
@@ -274,22 +279,6 @@ footer {
 .boton-musica:hover,
 .boton-volver:hover {
     background-color: #e87524;
-}
-
-@media (max-width: 700px) {
-    .detalle-pelicula {
-        flex-direction: column;
-        gap: 30px;
-        padding: 25px;
-    }
-
-    .imagen-pelicula {
-        width: 75%;
-    }
-
-    .informacion-pelicula h1 {
-        font-size: 30px;
-    }
 }
 
 /* RECOMENDACIONES */
@@ -369,17 +358,7 @@ footer {
     }
 }
 
-@media (max-width: 700px) {
-    .titulo-recomendaciones h1 {
-        font-size: 28px;
-    }
-
-    .categoria h2 {
-        margin-left: 20px;
-    }
-
-    
-/* FRASE DE NOLAN */
+/* FRASE Y AUDIO DE NOLAN (ESTILO ANTERIOR) */
 
 .frase-nolan {
     margin: 70px auto;
@@ -434,7 +413,7 @@ footer {
     max-width: 400px;
 }
 
-/* GIF DE NOLAN */
+/* GIF O VIDEO DE NOLAN (ESTILO ANTERIOR) */
 
 .gif-nolan {
     margin: 60px auto;
@@ -449,7 +428,8 @@ footer {
     margin-bottom: 25px;
 }
 
-.gif-nolan img {
+.gif-nolan img,
+.gif-nolan video {
     width: 100%;
     max-width: 750px;
     border: 1px solid #e87524;
@@ -464,7 +444,330 @@ footer {
     margin-top: 20px;
 }
 
-@media (max-width: 700px) {
+/* PAGINA ESPECIAL DE CHRISTOPHER NOLAN */
+
+.nolan-page {
+    background-color: #111111;
+    color: white;
+    overflow: hidden;
+}
+
+.nolan-portada {
+    min-height: 520px;
+    padding: 100px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #333333;
+}
+
+.nolan-etiqueta,
+.nolan-numero {
+    color: #e87524;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.nolan-portada h1 {
+    color: white;
+    font-size: clamp(55px, 10vw, 115px);
+    line-height: 0.95;
+    letter-spacing: 5px;
+    margin: 35px 0;
+}
+
+.nolan-subtitulo {
+    color: #bbbbbb;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.nolan-linea {
+    width: 60px;
+    height: 2px;
+    background: #e87524;
+    margin: 30px 0;
+}
+
+.nolan-intro {
+    color: #888888;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.nolan-biografia {
+    max-width: 1150px;
+    margin: auto;
+    padding: 110px 40px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.nolan-foto img {
+    width: 100%;
+    max-height: 530px;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.nolan-foto img:hover {
+    filter: grayscale(0%);
+}
+
+.nolan-foto p {
+    color: #777777;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+.nolan-texto h2 {
+    color: white;
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.nolan-texto > p:not(.nolan-numero) {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.nolan-ficha {
+    background: #191919;
+    padding: 85px max(35px, calc((100% - 1050px) / 2));
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+}
+
+.nolan-ficha-titulo h2 {
+    color: white;
+    font-size: 36px;
+    line-height: 1.2;
+    margin-top: 25px;
+}
+
+.nolan-dato {
+    padding: 18px 0;
+    border-bottom: 1px solid #383838;
+}
+
+.nolan-dato span {
+    color: #e87524;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.nolan-dato p {
+    color: #eeeeee;
+    font-size: 16px;
+    margin-top: 9px;
+}
+
+.nolan-frase {
+    max-width: 850px;
+    margin: 110px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.nolan-comillas {
+    color: #e87524;
+    font-family: Georgia, serif;
+    font-size: 100px;
+    line-height: 1;
+    margin-top: 35px;
+}
+
+.nolan-frase h2 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.nolan-traduccion {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+.nolan-autor {
+    color: #e87524;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-top: 25px;
+}
+
+.nolan-audio {
+    margin-top: 45px;
+}
+
+.nolan-audio p {
+    color: #aaaaaa;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.nolan-audio audio {
+    width: 100%;
+    max-width: 380px;
+}
+
+.nolan-video {
+    background: #191919;
+    padding: 90px 30px;
+    text-align: center;
+}
+
+.nolan-video-titulo {
+    margin-bottom: 35px;
+}
+
+.nolan-video-titulo h2 {
+    color: white;
+    font-size: 38px;
+    margin: 25px 0;
+}
+
+.nolan-video-titulo > p:last-child {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.nolan-video video {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    max-height: 550px;
+    object-fit: contain;
+    margin: auto;
+    background: #000000;
+}
+
+.nolan-video-pie {
+    color: #777777;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 18px;
+}
+
+.nolan-cierre {
+    text-align: center;
+    padding: 110px 25px;
+}
+
+.nolan-cierre > p {
+    color: #e87524;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.nolan-cierre h2 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 25px 0 40px;
+}
+
+.nolan-cierre a,
+.nolan-volver a {
+    display: inline-block;
+    color: #e87524;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #e87524;
+    padding-bottom: 8px;
+}
+
+.nolan-cierre a:hover,
+.nolan-volver a:hover {
+    color: white;
+    border-color: white;
+}
+
+.nolan-volver {
+    text-align: center;
+    padding: 30px 20px 60px;
+}
+
+/* AJUSTES PARA PANTALLAS PEQUEÑAS */
+
+@media (max-width: 750px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .portada h1 {
+        font-size: 42px;
+    }
+
+    .seccion {
+        padding: 50px 20px;
+    }
+
+    .catalogo {
+        padding: 35px 20px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .detalle-pelicula {
+        flex-direction: column;
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .imagen-pelicula {
+        width: 75%;
+    }
+
+    .informacion-pelicula h1 {
+        font-size: 30px;
+    }
+
+    .titulo-recomendaciones h1 {
+        font-size: 28px;
+    }
+
+    .categoria h2 {
+        margin-left: 20px;
+    }
+
+    .carrusel-contenido a {
+        width: 145px;
+    }
 
     .frase-nolan {
         padding: 30px 18px;
@@ -478,32 +781,56 @@ footer {
         margin: 40px 20px;
     }
 
-}
+    .nolan-portada {
+        min-height: 390px;
+        padding: 75px 20px;
+    }
 
+    .nolan-portada h1 {
+        font-size: 58px;
+    }
 
-    .carrusel-contenido a {
-        width: 145px;
+    .nolan-subtitulo {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .nolan-biografia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 70px 25px;
+    }
+
+    .nolan-foto {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .nolan-texto h2,
+    .nolan-ficha-titulo h2,
+    .nolan-video-titulo h2 {
+        font-size: 29px;
+    }
+
+    .nolan-ficha {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 65px 25px;
+    }
+
+    .nolan-frase {
+        margin: 75px auto;
+    }
+
+    .nolan-frase h2 {
+        font-size: 21px;
+    }
+
+    .nolan-video {
+        padding: 65px 18px;
+    }
+
+    .nolan-cierre h2 {
+        font-size: 24px;
     }
 }
-
-.gif-nolan video {
-    width: 100%;
-    max-width: 750px;
-    border: 1px solid #e87524;
-    display: block;
-    margin: auto;
-}
-.nolan-volver {
-    text-align: center;
-    padding: 30px 20px 60px;
-}
-
-.nolan-volver a {
-    display: inline-block;
-    color: #e87524;
-    text-decoration: none;
-    font-size: 12px;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #e87524;
-    padding-bottom: 8px;
-} 
