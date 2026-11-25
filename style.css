@@ -358,60 +358,7 @@ footer {
     }
 }
 
-/* FRASE Y AUDIO DE NOLAN (ESTILO ANTERIOR) */
 
-.frase-nolan {
-    margin: 70px auto;
-    padding: 40px 25px;
-    max-width: 850px;
-    border-top: 1px solid #e87524;
-    border-bottom: 1px solid #e87524;
-    text-align: center;
-}
-
-.etiqueta-frase {
-    color: #e87524;
-    font-size: 12px;
-    letter-spacing: 4px;
-    margin-bottom: 30px;
-}
-
-.frase-nolan h2 {
-    font-size: 27px;
-    line-height: 1.6;
-    font-weight: normal;
-    color: white;
-}
-
-.traduccion-frase {
-    color: #aaaaaa;
-    font-size: 15px;
-    line-height: 1.8;
-    margin-top: 25px;
-}
-
-.autor-frase {
-    color: #e87524;
-    letter-spacing: 3px;
-    font-size: 12px;
-    margin-top: 25px;
-}
-
-.audio-nolan {
-    margin-top: 35px;
-}
-
-.audio-nolan p {
-    color: white;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.audio-nolan audio {
-    width: 100%;
-    max-width: 400px;
-}
 
 /* GIF O VIDEO DE NOLAN (ESTILO ANTERIOR) */
 
