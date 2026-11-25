@@ -17,3 +17,6 @@ el boton para reproducir la musica aveces funciona aveces no
 
 lo de que las fotos pasan lo hice con la libreria y un ajuste con IA para que sea de imagen y no texto
 
+
+que el mouse pase por la imagen y suene fue un efecto que busque y busque y con ayuda de repositorios antiguos con javascript logre hacerlo
+
