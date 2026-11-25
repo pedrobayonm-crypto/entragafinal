@@ -93,14 +93,20 @@
 
         <!-- AUDIO DEL DIRECTOR -->
 
-        <section class="audio-director">
+        <section class="gif-nolan">
 
             <h2>DETRÁS DE LA CÁMARA</h2>
 
-            <audio controls>
-                <source src="nolan.mp3" type="audio/mpeg">
-                Tu navegador no puede reproducir este audio.
-            </audio>
+            <div class="musica-ambiente">
+                <audio id="ambiente" loop>
+                    <source src="nolan.mp3" type="audio/mpeg">
+                    Tu navegador no puede reproducir este audio.
+                </audio>
+
+                <button onclick="reproducirMusica()" id="botonMusica">
+                    ▶ ESCUCHAR AUDIO
+                </button>
+            </div>
 
             <p>
                 Cada detalle, cada imagen y cada decisión construyen
@@ -116,6 +122,21 @@
     <footer>
         <p>THE NOLAN FILES © 2026</p>
     </footer>
+
+    <script>
+        function reproducirMusica() {
+            var audio = document.getElementById("ambiente");
+            var boton = document.getElementById("botonMusica");
+
+            if (audio.paused) {
+                audio.play();
+                boton.innerHTML = "Ⅱ PAUSAR AUDIO";
+            } else {
+                audio.pause();
+                boton.innerHTML = "▶ ESCUCHAR AUDIO";
+            }
+        }
+    </script>
 
 </body>
 </html>
