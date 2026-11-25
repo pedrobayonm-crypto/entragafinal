@@ -78,17 +78,15 @@
 
             <p class="autor-frase">CHRISTOPHER NOLAN</p>
 
-        
-
         </section>
 
-        <!-- VIDEO DE NOLAN  -->
+        <!-- VIDEO DE NOLAN -->
 
         <section class="gif-nolan">
 
             <h2>DETRÁS DE LA CÁMARA</h2>
 
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline id="videoNolan">
                 <source src="nolan.mp4" type="video/mp4">
             </video>
 
@@ -106,6 +104,35 @@
     <footer>
         <p>THE NOLAN FILES © 2026</p>
     </footer>
+
+    <!-- SONIDO AL PASAR EL MOUSE -->
+
+    <script>
+        const video = document.getElementById("videoNolan");
+
+        video.addEventListener("mouseenter", function() {
+
+            const contextoAudio = new (window.AudioContext || window.webkitAudioContext)();
+
+            const oscilador = contextoAudio.createOscillator();
+            const volumen = contextoAudio.createGain();
+
+            oscilador.type = "sine";
+
+            oscilador.frequency.setValueAtTime(120, contextoAudio.currentTime);
+            oscilador.frequency.exponentialRampToValueAtTime(45, contextoAudio.currentTime + 1);
+
+            volumen.gain.setValueAtTime(0.3, contextoAudio.currentTime);
+            volumen.gain.exponentialRampToValueAtTime(0.001, contextoAudio.currentTime + 1);
+
+            oscilador.connect(volumen);
+            volumen.connect(contextoAudio.destination);
+
+            oscilador.start();
+            oscilador.stop(contextoAudio.currentTime + 1);
+
+        });
+    </script>
 
 </body>
 </html>
